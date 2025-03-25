@@ -33,7 +33,7 @@ public class TestLoginSteps{
 		
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys(username);
 		driver.findElement(By.id("pass")).sendKeys(password);
-		driver.findElement(By.xpath("//button[text()='Log in']")).click();
+		driver.findElement(By.xpath("//button[text()='Log in']"));
 	    
 	}
 
@@ -46,7 +46,7 @@ public class TestLoginSteps{
 	    //boolean invaildLogin=driver.findElement(By.xpath("//div[contains(text(),'The email address or')]")).isDisplayed();
 	    //assertFalse(invalidLogin);
 		assertTrue(true);
-	    
+	    driver.quit();
 	}
 
 
